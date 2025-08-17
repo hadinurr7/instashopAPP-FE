@@ -18,14 +18,13 @@ export const Header = styled.header`
 
 export const ProfileSection = styled.div`
   display: flex;
-  padding: 44px 24px 44px; // increased bottom padding for better spacing without highlights
+  padding: 44px 24px 44px;
   
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 24px 16px 32px; // increased bottom padding on mobile
-  }
+    padding: 24px 16px 32px;
 `
 
 export const ProfileImage = styled.img`

@@ -4,14 +4,14 @@ import { useState, type ChangeEvent, type FormEvent } from "react"
 import Link from "next/link"
 import { Container, Form, Title, Input, Button, LinkText } from "@/components/AuthForm.component"
 
-interface ForgotPasswordForm {
+interface ForgotPasswordPayload {
   email: string
 }
 
 export default function ForgotPasswordPage() {
   const BASE_URL_BE = process.env.NEXT_PUBLIC_BASE_URL_BE
 
-  const [form, setForm] = useState<ForgotPasswordForm>({
+  const [form, setForm] = useState<ForgotPasswordPayload>({
     email: "",
   })
   const [loading, setLoading] = useState(false)
