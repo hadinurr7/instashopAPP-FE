@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Container = styled.div`
   height: 100vh;
@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #fafafa;
-`;
+`
 
 export const Form = styled.form`
   background: #fff;
@@ -16,7 +16,7 @@ export const Form = styled.form`
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
-`;
+`
 
 export const Title = styled.h1`
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -24,7 +24,7 @@ export const Title = styled.h1`
   font-weight: 600;
   font-size: 32px;
   margin-bottom: 24px;
-`;
+`
 
 export const Input = styled.input`
   color: #333;
@@ -40,7 +40,7 @@ export const Input = styled.input`
     outline: none;
     border-color: #a8a8a8;
   }
-`;
+`
 
 export const Button = styled.button`
   width: 100%;
@@ -57,7 +57,7 @@ export const Button = styled.button`
     background-color: #b2dffc;
     cursor: not-allowed;
   }
-`;
+`
 
 export const LinkText = styled.p`
   margin-top: 12px;
@@ -74,5 +74,4 @@ export const LinkText = styled.p`
       text-decoration: underline;
     }
   }
-`;
-
+`
