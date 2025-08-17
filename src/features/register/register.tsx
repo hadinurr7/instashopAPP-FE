@@ -9,7 +9,7 @@ import {
   Input,
   Button,
   LinkText,
-} from "@/components/styled.component";
+} from "@/components/AuthForm.component";
 
 interface RegisterForm {
   username: string;
@@ -18,6 +18,8 @@ interface RegisterForm {
 }
 
 export default function RegisterPage() {
+  const BASE_URL_BE = process.env.NEXT_PUBLIC_BASE_URL_BE;
+
   const [form, setForm] = useState<RegisterForm>({
     username: "",
     email: "",
@@ -40,7 +42,7 @@ export default function RegisterPage() {
     setLoading(true);
 
     try {
-      const response = await fetch("http:localhost:3000/auth/register", {
+      const response = await fetch(`${BASE_URL_BE}/auth/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
