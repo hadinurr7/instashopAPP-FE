@@ -20,20 +20,20 @@ const SidebarWrapper = styled.aside`
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;              /* full viewport height */
-  width: 260px;               /* lebar sidebar */
-  background-color: #fff;     /* putih */
+  height: 100vh;              
+  width: 260px;              
+  background-color: #fff;     
   border-right: 1px solid #dbdbdb;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* bagi atas dan bawah */
-  padding: 20px 0;            /* jarak dalam */
+  justify-content: space-between; 
+  padding: 20px 0;            
   color: #000;
   z-index: 50;
-  overflow-y: auto;           /* bisa scroll kalau menu panjang */
+  overflow-y: auto;          
 
   @media (max-width: 1024px) {
-    display: none;            /* hilang di tablet/HP */
+    display: none;           
   }
 `;
 

@@ -8,9 +8,7 @@ export default function ProtectedLayout({
   return (
     <div>
       <DesktopSidebar />
-      <main style={{ marginLeft: "260px", padding: "20px" }}>
-        {children}
-      </main>
+      <main style={{ marginLeft: "260px" }}>{children}</main>
     </div>
   );
 }
