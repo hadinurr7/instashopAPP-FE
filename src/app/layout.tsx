@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import DesktopSidebar from "@/components/sidebar.component";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -20,13 +21,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
+     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <DesktopSidebar />
+        <main style={{ marginLeft: "260px", padding: "20px" }}>
+          {children}
+        </main>
       </body>
     </html>
   );
