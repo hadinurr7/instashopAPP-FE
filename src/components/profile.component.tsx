@@ -25,6 +25,7 @@ export const ProfileSection = styled.div`
     align-items: center;
     text-align: center;
     padding: 24px 16px 32px;
+  }
 `
 
 export const ProfileImage = styled.img`
@@ -33,14 +34,17 @@ export const ProfileImage = styled.img`
   border-radius: 50%;
   object-fit: cover;
   margin-right: 44px;
-  
+  border: 3px solid #dbdbdb;  
+
   @media (max-width: 768px) {
     margin-right: 0;
     margin-bottom: 24px;
     width: 77px;
     height: 77px;
+    border: 2px solid #dbdbdb;
   }
 `
+
 
 export const UserInfo = styled.div`
   flex: 1;
