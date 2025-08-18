@@ -1,4 +1,4 @@
-import DesktopSidebar from "@/components/navbar.component";
+import DesktopSidebar from "@/components/sidebar.component";
 
 export default function ProtectedLayout({
   children,
